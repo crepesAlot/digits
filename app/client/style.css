@@ -3,8 +3,22 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg: darkblue;
+  --matr-navbar-bg-rgb: 0, 0, 139;
+  --matr-navbar-text-color: white;
+  --matr-navbar-highlight-text: lightgray;
+}
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+}
+
+.bg-dark a.dropdown-item {
+  color: var(--matr-navbar-bg);
 }
 
 /* Change bootstrap variable values.
@@ -12,6 +26,9 @@
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background: fixed center no-repeat url("images/sky-background.jpeg");
+  background-size: cover;
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -25,4 +42,8 @@ body {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
 }
