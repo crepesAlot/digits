@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ListGroup } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-const Note = ({ contact }) => (
+const Note = ({ note }) => (
   <ListGroup.Item>
     <p className="fw-lighter">{note.createdAt.toLocaleDateString('en-US')}</p>
     <p>{note.note}</p>
@@ -12,7 +12,7 @@ const Note = ({ contact }) => (
 
 // Require a document to be passed to this component.
 Note.propTypes = {
-  contact: PropTypes.shape({
+  note: PropTypes.shape({
     note: PropTypes.string,
     contactId: PropTypes.string,
     owner: PropTypes.string,
