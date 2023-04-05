@@ -68,7 +68,7 @@ The following sections describe the major features of this template.
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing.png)
+![](doc/landing.png)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
